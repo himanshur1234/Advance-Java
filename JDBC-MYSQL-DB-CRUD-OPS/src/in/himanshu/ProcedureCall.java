@@ -12,7 +12,7 @@ public class ProcedureCall {
 	private static final String DB_PASS="Himanshu@1023"; 
 	private static final String PROCEDURE="call getBooksData()"; 
 	public static void main(String[] args) throws Exception{
-		
+		//Example of Callable statement
 		Connection con = DriverManager.getConnection(DB_URL,DB_UNAME,DB_PASS);
 		CallableStatement cbsmt = con.prepareCall(PROCEDURE);
 		
